@@ -47,52 +47,13 @@
           <button class="filter-button" data-filter="system-design">System Design</button>
         </section>
 
-        <section class="blog-grid blog-grid-large">
-          <article class="blog-card reveal" data-tags="weekly-log learning reflection">
-            <p class="blog-date">March 20, 2026</p>
-            <h2>What I Built and Learned This Week</h2>
-            <div class="tag-row">
-              <span>Weekly Log</span>
-              <span>Learning</span>
-              <span>Reflection</span>
-            </div>
-            <p>
-              A weekly engineering log covering implementation progress, problems encountered, failed attempts,
-              and the parts that actually moved the work forward.
-            </p>
-            <a href="../posts/what-i-built-and-learned-this-week.html">Read post</a>
-          </article>
-
-          <article class="blog-card reveal" data-tags="rag llm architecture">
-            <p class="blog-date">March 15, 2026</p>
-            <h2>From Naive RAG to Modular RAG</h2>
-            <div class="tag-row">
-              <span>RAG</span>
-              <span>LLM Systems</span>
-              <span>Architecture</span>
-            </div>
-            <p>
-              A breakdown of why a simple retrieval pipeline was not enough and how modular orchestration
-              improved reliability, traceability, and safety thinking.
-            </p>
-            <a href="../posts/from-naive-rag-to-modular-rag.html">Read post</a>
-          </article>
-
-          <article class="blog-card reveal" data-tags="backend flask system-design">
-            <p class="blog-date">March 08, 2026</p>
-            <h2>What Building a Flask Backend Taught Me About System Design</h2>
-            <div class="tag-row">
-              <span>Backend</span>
-              <span>Flask</span>
-              <span>System Design</span>
-            </div>
-            <p>
-              Notes on schemas, route organization, maintainability, and why backend quality is often shaped by
-              the next migration rather than the current feature.
-            </p>
-            <a href="../posts/what-building-a-flask-backend-taught-me-about-system-design.html">Read post</a>
-          </article>
-        </section>
+        <section
+          class="blog-grid blog-grid-large"
+          data-blog-list
+          data-basepath="../"
+          data-heading="h2"
+          data-link-label="Read post"
+        ></section>
 
         <section class="section-footer reveal">
           <a class="button secondary" href="../posts/weekly-template.html">Open weekly post template</a>
@@ -112,16 +73,17 @@
               </p>
             </article>
             <article class="info-card reveal">
-              <h3>Update both listing pages</h3>
+              <h3>Update one metadata file</h3>
               <p>
-                Add one blog card here in `blog/index.html` and one in the homepage preview inside `index.html`.
+                Add one object to <a href="../assets/js/blog-data.js">`assets/js/blog-data.js`</a> and both the
+                homepage and blog archive update automatically.
               </p>
             </article>
           </div>
           <div class="contact-card reveal">
             <p class="architecture-title">Files To Touch</p>
-            <p>`posts/your-new-post.html`, `index.html`, and `blog/index.html`.</p>
-            <p>That is the whole workflow.</p>
+            <p>`posts/your-new-post.html` and `assets/js/blog-data.js`.</p>
+            <p>That is the whole workflow. Nobody can publish anything unless they have access to your GitHub repo.</p>
           </div>
         </section>
       </main>
@@ -132,6 +94,7 @@
       </footer>
     </div>
 
+    <script src="../assets/js/blog-data.js"></script>
     <script src="../assets/js/script.js"></script>
   </body>
 </html>

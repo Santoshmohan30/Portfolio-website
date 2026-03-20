@@ -818,50 +818,7 @@
               changed in the design because of it.
             </p>
           </div>
-          <div class="blog-grid">
-            <article class="blog-card reveal" data-tags="weekly-log learning reflection">
-              <p class="blog-date">March 20, 2026</p>
-              <h3>What I Built and Learned This Week</h3>
-              <div class="tag-row">
-                <span>Weekly Log</span>
-                <span>Engineering</span>
-                <span>Iteration</span>
-              </div>
-              <p>
-                A weekly snapshot of building momentum across backend systems, research workflows, and technical
-                communication.
-              </p>
-              <a href="posts/what-i-built-and-learned-this-week.html">Read more</a>
-            </article>
-            <article class="blog-card reveal" data-tags="rag llm architecture">
-              <p class="blog-date">March 15, 2026</p>
-              <h3>From Naive RAG to Modular RAG</h3>
-              <div class="tag-row">
-                <span>RAG</span>
-                <span>LLM Systems</span>
-                <span>Architecture</span>
-              </div>
-              <p>
-                Why retrieval quality, validation boundaries, and orchestration design matter more than a simple
-                retrieval-plus-answer pattern.
-              </p>
-              <a href="posts/from-naive-rag-to-modular-rag.html">Read more</a>
-            </article>
-            <article class="blog-card reveal" data-tags="backend flask system-design">
-              <p class="blog-date">March 08, 2026</p>
-              <h3>What Building a Flask Backend Taught Me About System Design</h3>
-              <div class="tag-row">
-                <span>Flask</span>
-                <span>Backend</span>
-                <span>System Design</span>
-              </div>
-              <p>
-                A practical reflection on how schema design, route organization, and future migrations influence
-                real backend quality.
-              </p>
-              <a href="posts/what-building-a-flask-backend-taught-me-about-system-design.html">Read more</a>
-            </article>
-          </div>
+          <div class="blog-grid" data-blog-list data-basepath="" data-heading="h3" data-link-label="Read more"></div>
           <div class="section-footer reveal">
             <a class="button secondary" href="blog/index.html">View all posts</a>
           </div>
@@ -872,8 +829,8 @@
             <p class="eyebrow">Publishing Workflow</p>
             <h2>How I actually add a new post</h2>
             <p>
-              This is a simple file-based workflow. I write in VS Code, update two small sections, push to GitHub,
-              and the site updates automatically.
+              This is now a single-source workflow. I write the post, add its metadata in one place, push to
+              GitHub, and both blog sections update automatically.
             </p>
           </div>
           <div class="project-grid">
@@ -892,28 +849,28 @@
               </p>
             </article>
             <article class="info-card reveal">
-              <h3>3. Add it to the homepage</h3>
+              <h3>3. Update the blog data file</h3>
               <p>
-                Add one new blog card in the blog preview section of <a href="index.html">`index.html`</a> so the
-                latest post appears on the homepage.
+                Add one new object in <a href="assets/js/blog-data.js">`assets/js/blog-data.js`</a> with the title,
+                date, tags, preview, and post file link.
               </p>
             </article>
             <article class="info-card reveal">
-              <h3>4. Add it to the blog page</h3>
+              <h3>4. Push to GitHub</h3>
               <p>
-                Add the same card in <a href="blog/index.html">`blog/index.html`</a> so the full blog archive also
-                shows the post.
+                Commit the new post file and the `blog-data.js` change. GitHub Pages rebuilds the site
+                automatically from `main`.
               </p>
             </article>
           </div>
           <div class="contact-card reveal">
             <p class="architecture-title">Quick Publish Checklist</p>
             <p>
-              New file in `posts/` → edit the content → add one card in `index.html` → add one card in
-              `blog/index.html` → push to `main`.
+              New file in `posts/` → edit the content → add one object in `assets/js/blog-data.js` → push to
+              `main`.
             </p>
             <p>
-              No admin panel is needed. The site updates from the files directly, which keeps it easy to maintain.
+              No admin panel is needed. Also, nobody can post to this site unless they can change your GitHub repo.
             </p>
           </div>
         </section>
@@ -1016,6 +973,7 @@
       </footer>
     </div>
 
+    <script src="assets/js/blog-data.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

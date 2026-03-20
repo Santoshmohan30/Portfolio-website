@@ -133,6 +133,15 @@ strong {
   color: var(--accent-2);
 }
 
+.hero-legal-name {
+  margin: 0 0 0.35rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+
 .hero-summary {
   max-width: 52rem;
   font-size: clamp(1.15rem, 2.4vw, 1.4rem);

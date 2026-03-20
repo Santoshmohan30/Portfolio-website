@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sonny Jena | AI/ML Engineer, Backend Engineer, Computational Neuroscience</title>
+    <title>Sonny | Santosh Mohan Jena</title>
     <meta
       name="description"
-      content="Portfolio of Sonny Jena, AI/ML engineer, backend engineer, and computational neuroscience researcher building ML-powered systems, backend applications, and scientific pipelines."
+      content="Portfolio of Santosh Mohan Jena, who goes by Sonny: AI/ML engineer, backend engineer, and computational neuroscience researcher building ML-powered systems, backend applications, and scientific pipelines."
     />
     <meta
       name="keywords"
       content="Sonny Jena, Santosh Mohan Jena, AI engineer, ML engineer, backend engineer, computational neuroscience, portfolio, GitHub Pages"
     />
-    <meta name="author" content="Sonny Jena" />
-    <meta property="og:title" content="Sonny Jena | Engineering Portfolio" />
+    <meta name="author" content="Santosh Mohan Jena" />
+    <meta property="og:title" content="Sonny | Santosh Mohan Jena" />
     <meta
       property="og:description"
       content="I build ML-powered backend systems and scientific pipelines that turn complex data into usable intelligence."
@@ -47,7 +47,8 @@
         <section class="hero section">
           <div class="hero-copy reveal">
             <p class="eyebrow">Serious engineering across product, systems, and science</p>
-            <h1>Sonny Jena</h1>
+            <p class="hero-legal-name">Santosh Mohan Jena</p>
+            <h1>Sonny</h1>
             <p class="hero-role">
               AI/ML Engineer | Backend Engineer | Computational Neuroscience Researcher
             </p>
@@ -56,9 +57,9 @@
               intelligence.
             </p>
             <p class="hero-detail">
-              I go by Sonny. Formally, I’m Santosh Mohan Jena. My work sits between AI/ML systems, backend
-              engineering, and research workflows that have to hold up when the data is messy, the assumptions are
-              incomplete, and the first version is clearly not the final one.
+              I go by Sonny. My work sits between AI/ML systems, backend engineering, and research workflows that
+              have to hold up when the data is messy, the assumptions are incomplete, and the first version is
+              clearly not the final one.
             </p>
             <div class="hero-actions">
               <a class="button primary" href="#projects">Projects</a>
@@ -71,7 +72,7 @@
                 rel="noreferrer"
                 >GitHub</a
               >
-              <a class="button ghost" href="https://www.linkedin.com/in/sonny-jena/" target="_blank" rel="noreferrer"
+              <a class="button ghost" href="https://www.linkedin.com/in/santosh-mohan-a65112299/" target="_blank" rel="noreferrer"
                 >LinkedIn</a
               >
             </div>
@@ -150,10 +151,12 @@
                 where the data is noisy and the first design rarely survives unchanged.
               </p>
               <p>
-                The problems I enjoy most are the ones with friction: the backend that needs a cleaner structure,
-                the pipeline that works until real data arrives, the retrieval flow that sounds convincing but
-                still needs stronger safeguards, and the research workflow that has to be made reproducible before
-                anyone should trust it.
+                I’m ambitious about growing into difficult engineering work, and I’m happiest when I’m learning
+                fast, working hard, and improving systems that are still rough around the edges. The problems I
+                enjoy most are the ones with friction: the backend that needs a cleaner structure, the pipeline
+                that works until real data arrives, the retrieval flow that sounds convincing but still needs
+                stronger safeguards, and the research workflow that has to be made reproducible before anyone
+                should trust it.
               </p>
             </div>
             <div class="stack-panel reveal">
@@ -430,11 +433,14 @@
                   <p>
                     At first I thought the hard part would be building screens and forms. It turned out the real
                     difficulty was the data model. Breeding history, cages, pups, procedures, and scheduling all
-                    touch each other, and once one part of the structure is weak, the rest gets awkward fast.
+                    touch each other, and every time I added one workflow I exposed another edge case I had not
+                    modeled well enough.
                   </p>
                   <p>
                     SQLite was good for getting the project moving, but it also made me face a bigger question:
-                    was I building something that could evolve cleanly, or just something that worked for now?
+                    was I building something that could evolve cleanly, or just something that worked for now? The
+                    more records I imagined a lab accumulating, the more obvious it became that I needed to think
+                    beyond the first version.
                   </p>
                 </div>
                 <div>
@@ -446,8 +452,8 @@
                   </p>
                   <p>
                     Some tables were doing too much, and some boundaries were not thought through enough. Queries
-                    became harder to write cleanly, and validation logic started leaking into places it should not
-                    have been.
+                    that should have been simple started turning into joins and conditions that were harder to
+                    reason about, and validation logic started leaking into places it should not have been.
                   </p>
                 </div>
                 <div>
@@ -494,7 +500,8 @@
                   <p>
                     The first challenge was honesty. A simple retrieval pipeline can look impressive during a demo,
                     but once the question gets messier or the retrieval quality drops, that same flow can become
-                    hard to trust very quickly.
+                    hard to trust very quickly. I kept seeing answers that sounded polished while leaning on weak
+                    or overly broad context.
                   </p>
                 </div>
                 <div>
@@ -502,7 +509,9 @@
                   <p>
                     I started with a straightforward retrieval-plus-generation setup because it was the fastest way
                     to get something working. That helped me understand the problem, but it did not give me enough
-                    control over why an answer was produced or whether it should have been produced at all.
+                    control over why an answer was produced or whether it should have been produced at all. Once I
+                    began thinking about medical use cases more seriously, that lack of control stopped feeling
+                    acceptable.
                   </p>
                 </div>
                 <div>
@@ -545,14 +554,17 @@
                   <h4>Challenges Faced</h4>
                   <p>
                     The hard part was dealing with variability. OCR is noisy, document layouts are inconsistent,
-                    and the output still has to match a structure the rest of the system can rely on.
+                    and the output still has to match a structure the rest of the system can rely on. A few files
+                    would work cleanly, then the next one would break because the scan quality, spacing, or layout
+                    was slightly different.
                   </p>
                 </div>
                 <div>
                   <h4>What I Tried</h4>
                   <p>
                     My early extraction logic assumed more regularity than real documents actually had. That made
-                    parsing brittle and pushed too much cleanup effort downstream.
+                    parsing brittle and pushed too much cleanup effort downstream. Tables, broken OCR tokens, and
+                    inconsistent field ordering made that obvious very quickly.
                   </p>
                 </div>
                 <div>
@@ -596,7 +608,8 @@
                   <p>
                     This was one of the clearest examples of how quickly scientific pipelines get complicated.
                     Large TIFF stacks, alignment issues, synchronization between neural and behavioral data, and
-                    plain memory limits all showed up at once.
+                    plain memory limits all showed up at once. Some runs were slow enough to force me to rethink
+                    how much I was trying to hold in memory at each stage.
                   </p>
                   <p>
                     There were also moments where I had to admit that parts of the scaling strategy were not
@@ -609,6 +622,8 @@
                     My earlier passes were too monolithic. They made it harder to isolate memory-heavy stages and
                     easier to miss subtle issues in alignment and synchronization. That was frustrating because a
                     pipeline can keep running while still quietly damaging the quality of the downstream analysis.
+                    I also ran into moments where frame counts or timing assumptions did not line up cleanly, which
+                    forced me to inspect the workflow more carefully instead of trusting the output.
                   </p>
                 </div>
                 <div>
@@ -894,7 +909,7 @@
               <a href="mailto:santoshmohan30@gmail.com">santoshmohan30@gmail.com</a>
               <a href="mailto:sjena@buffalo.edu">sjena@buffalo.edu</a>
               <a href="https://github.com/Santoshmohan30" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/sonny-jena/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/santosh-mohan-a65112299/" target="_blank" rel="noreferrer">LinkedIn</a>
               <a class="button primary" href="resume.html">View Resume</a>
             </div>
           </div>

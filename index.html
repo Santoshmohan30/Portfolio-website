@@ -870,41 +870,51 @@
         <section class="section" id="writing-workflow">
           <div class="section-heading reveal">
             <p class="eyebrow">Publishing Workflow</p>
-            <h2>Where I add new blog posts</h2>
+            <h2>How I actually add a new post</h2>
             <p>
-              The writing flow is intentionally simple so I can create a post in VS Code, commit it, and have the
-              site update through GitHub Pages.
+              This is a simple file-based workflow. I write in VS Code, update two small sections, push to GitHub,
+              and the site updates automatically.
             </p>
           </div>
           <div class="project-grid">
             <article class="info-card reveal">
-              <h3>Step 1: Duplicate the template</h3>
+              <h3>1. Create the post file</h3>
               <p>
-                Start from <a href="posts/weekly-template.html">`posts/weekly-template.html`</a>, duplicate it,
-                rename it, and write the new post.
+                Duplicate <a href="posts/weekly-template.html">`posts/weekly-template.html`</a> inside the
+                `posts/` folder and rename it to something like `week-13-learning-log.html`.
               </p>
             </article>
             <article class="info-card reveal">
-              <h3>Step 2: Add the post card</h3>
+              <h3>2. Edit the post content</h3>
               <p>
-                Add a matching blog card on this homepage section and on <a href="blog/index.html">the blog
-                page</a> so the post appears in both places.
+                Open the new file and replace the title, date, sections, and text. That single file becomes the
+                full blog post page.
               </p>
             </article>
             <article class="info-card reveal">
-              <h3>Step 3: Push to GitHub</h3>
+              <h3>3. Add it to the homepage</h3>
               <p>
-                Commit the new file and the two blog card updates. GitHub Pages rebuilds the site automatically
-                from the `main` branch.
+                Add one new blog card in the blog preview section of <a href="index.html">`index.html`</a> so the
+                latest post appears on the homepage.
               </p>
             </article>
             <article class="info-card reveal">
-              <h3>Best use cases</h3>
+              <h3>4. Add it to the blog page</h3>
               <p>
-                This setup works well for weekly build logs, project case studies, research reflections, and short
-                engineering notes.
+                Add the same card in <a href="blog/index.html">`blog/index.html`</a> so the full blog archive also
+                shows the post.
               </p>
             </article>
+          </div>
+          <div class="contact-card reveal">
+            <p class="architecture-title">Quick Publish Checklist</p>
+            <p>
+              New file in `posts/` → edit the content → add one card in `index.html` → add one card in
+              `blog/index.html` → push to `main`.
+            </p>
+            <p>
+              No admin panel is needed. The site updates from the files directly, which keeps it easy to maintain.
+            </p>
           </div>
         </section>
 

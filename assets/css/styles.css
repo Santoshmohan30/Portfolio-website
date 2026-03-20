@@ -463,6 +463,25 @@ strong {
   color: var(--text);
 }
 
+.quote-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote-text {
+  font-size: 1.08rem;
+  color: var(--text);
+}
+
+.quote-author {
+  color: var(--accent-2);
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
 .post-layout {
   max-width: 900px;
 }

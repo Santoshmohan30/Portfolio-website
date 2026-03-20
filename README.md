@@ -1,6 +1,6 @@
-# Santosh Mohan Jena Portfolio
+# Sonny Jena Portfolio
 
-Professional GitHub Pages portfolio designed to position Santosh Mohan Jena across AI/ML engineering, backend/software engineering, computational neuroscience, and technical writing.
+Professional GitHub Pages portfolio designed to position Sonny Jena across AI/ML engineering, backend/software engineering, computational neuroscience, and technical writing.
 
 ## Recommended folder structure
 
@@ -12,8 +12,6 @@ portfolio-website/
 ├── assets/
 │   ├── css/
 │   │   └── styles.css
-│   ├── docs/
-│   │   └── resume.pdf
 │   ├── images/
 │   │   └── placeholders/
 │   │       ├── project-mousebase.svg
@@ -30,6 +28,7 @@ portfolio-website/
 │       └── script.js
 ├── blog/
 │   └── index.html
+├── resume.html
 └── posts/
     ├── weekly-template.html
     ├── what-i-built-and-learned-this-week.html
@@ -42,6 +41,7 @@ portfolio-website/
 - Premium dark landing page with recruiter-focused narrative and strong hierarchy
 - Tracks, about, skills, featured projects, case studies, engineering mindset, experience, gallery, and contact sections
 - Separate blog page with tag filtering
+- Public web resume page so the live site works without committing a PDF
 - Reusable weekly post template so new posts can be created by duplicating one HTML file
 - Static HTML/CSS/JS only, so it works directly with GitHub Pages
 - Placeholder visuals and comments showing where to replace links, images, and text
@@ -93,8 +93,8 @@ Start with the high-signal items that recruiters will notice immediately:
 2. Swap the placeholder project/demo links with real repository or demo URLs.
 3. Replace the SVG project and gallery placeholders with screenshots, architecture diagrams, and professional photos.
 4. Review the case study language so it matches your exact project history and achievements.
-5. Replace `assets/docs/resume.pdf` with your latest resume when needed.
-6. Add more blog posts by duplicating `posts/weekly-template.html`.
+5. Add more blog posts by duplicating `posts/weekly-template.html`.
+6. Update `resume.html` if you want the public web resume to show more detail.
 
 ## Easy maintenance workflow
 
@@ -104,6 +104,7 @@ Start with the high-signal items that recruiters will notice immediately:
 - Add new blog posts in `posts/`.
 - Add new blog cards on both `index.html` and `blog/index.html`.
 - Replace placeholder visuals inside `assets/images/placeholders/` or point the HTML to real images.
+- If you later want a downloadable PDF, host it separately and link it from `resume.html`.
 
 ## Ideal README structure for the repository
 
@@ -145,5 +146,5 @@ Tree view of the repository.
 - Add a custom domain and favicon
 - Add real project screenshots and architecture diagrams
 - Add analytics such as Plausible or Google Analytics if desired
-- Add downloadable case-study PDFs for the strongest projects
+- Add a hosted PDF resume later if you want a downloadable file on top of the web resume
 - Add a `404.html` later for a polished GitHub Pages experience

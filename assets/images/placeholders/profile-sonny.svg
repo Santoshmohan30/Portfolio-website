@@ -1,0 +1,17 @@
+<svg width="720" height="820" viewBox="0 0 720 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="820" rx="36" fill="#EEF1F5"/>
+  <path d="M0 94C46 42 108 14 176 14H272L180 278H0V94Z" fill="#3E6D34"/>
+  <path d="M464 820C592 820 690 716 720 590V820H464Z" fill="#264D24"/>
+  <path d="M126 684C210 720 298 740 398 744C512 748 612 724 720 660V820H0V752C38 714 76 692 126 684Z" fill="#203624"/>
+  <ellipse cx="356" cy="314" rx="154" ry="186" fill="#EBC3A8"/>
+  <path d="M216 298C220 198 274 114 360 114C446 114 504 196 500 294L492 278C470 202 420 160 352 160C286 160 238 202 220 282L216 298Z" fill="#121212"/>
+  <path d="M246 532C288 582 430 586 472 532V700H246V532Z" fill="#D8AD92"/>
+  <path d="M232 616C260 594 298 584 360 584C422 584 458 594 486 616L568 820H152L232 616Z" fill="#172032"/>
+  <path d="M288 620L360 688L430 620L456 820H264L288 620Z" fill="#F4F7FB"/>
+  <path d="M246 324C264 278 306 254 346 254C386 254 426 278 444 324" stroke="#A46B55" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="304" cy="342" rx="16" ry="10" fill="#111"/>
+  <ellipse cx="414" cy="342" rx="16" ry="10" fill="#111"/>
+  <path d="M332 418C352 430 372 430 392 418" stroke="#9E5F56" stroke-width="5" stroke-linecap="round"/>
+  <path d="M182 80L146 264" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+  <text transform="rotate(74 88 560)" x="88" y="560" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="66" font-weight="700">OPEN TO WORK</text>
+</svg>

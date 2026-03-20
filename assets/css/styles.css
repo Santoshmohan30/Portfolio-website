@@ -232,19 +232,6 @@ strong {
   padding: 1.2rem;
 }
 
-.profile-shot {
-  overflow: hidden;
-  margin-bottom: 1rem;
-  border-radius: 22px;
-  border: 1px solid rgba(125, 149, 192, 0.16);
-  background: linear-gradient(180deg, rgba(16, 27, 44, 0.98), rgba(9, 15, 28, 0.88));
-}
-
-.profile-shot img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 .metric-card {
   padding: 1rem 1.1rem;

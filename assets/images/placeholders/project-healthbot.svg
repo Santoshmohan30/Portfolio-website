@@ -1,21 +1,50 @@
 <svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="720" rx="36" fill="#08101D"/>
-  <rect x="72" y="80" width="210" height="120" rx="20" fill="#11203A" stroke="#23314C"/>
-  <rect x="350" y="80" width="210" height="120" rx="20" fill="#11203A" stroke="#23314C"/>
-  <rect x="628" y="80" width="210" height="120" rx="20" fill="#11203A" stroke="#23314C"/>
-  <rect x="906" y="80" width="210" height="120" rx="20" fill="#11203A" stroke="#23314C"/>
-  <rect x="210" y="334" width="210" height="120" rx="20" fill="#0E1729" stroke="#23314C"/>
-  <rect x="490" y="334" width="210" height="120" rx="20" fill="#0E1729" stroke="#23314C"/>
-  <rect x="770" y="334" width="210" height="120" rx="20" fill="#0E1729" stroke="#23314C"/>
-  <path d="M282 140H350" stroke="#57D4FF" stroke-width="4"/>
-  <path d="M560 140H628" stroke="#57D4FF" stroke-width="4"/>
-  <path d="M838 140H906" stroke="#57D4FF" stroke-width="4"/>
-  <path d="M455 200V280H315V334" stroke="#9EF5D1" stroke-width="4"/>
-  <path d="M733 200V280H595V334" stroke="#9EF5D1" stroke-width="4"/>
-  <path d="M1011 200V280H875V334" stroke="#9EF5D1" stroke-width="4"/>
-  <circle cx="178" cy="140" r="20" fill="#57D4FF"/>
-  <circle cx="456" cy="140" r="20" fill="#9EF5D1"/>
-  <circle cx="734" cy="140" r="20" fill="#FFB86B"/>
-  <circle cx="1012" cy="140" r="20" fill="#57D4FF"/>
-  <text x="106" y="632" fill="#9FB2D4" font-family="Arial, sans-serif" font-size="26">Replace with LangGraph workflow, system diagram, or agent architecture</text>
+  <rect width="1200" height="720" rx="36" fill="#07101E"/>
+  <rect x="58" y="58" width="1084" height="604" rx="28" fill="#0D1728" stroke="#24324B"/>
+  <text x="92" y="118" fill="#F2F6FF" font-family="Arial, sans-serif" font-size="34" font-weight="700">HealthBot Agentic RAG Workflow</text>
+  <text x="92" y="154" fill="#97A9C8" font-family="Arial, sans-serif" font-size="20">A LangGraph-style view of retrieval, validation, safety, and response orchestration.</text>
+
+  <rect x="96" y="214" width="168" height="84" rx="20" fill="#13213A" stroke="#2D3B55"/>
+  <text x="126" y="252" fill="#F2F6FF" font-family="Arial, sans-serif" font-size="22" font-weight="700">User Query</text>
+  <text x="126" y="278" fill="#93A6C6" font-family="Arial, sans-serif" font-size="16">Question intake</text>
+
+  <rect x="334" y="214" width="196" height="84" rx="20" fill="#13213A" stroke="#2D3B55"/>
+  <text x="364" y="252" fill="#F2F6FF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Retriever</text>
+  <text x="364" y="278" fill="#93A6C6" font-family="Arial, sans-serif" font-size="16">Embeddings + vector search</text>
+
+  <rect x="602" y="214" width="202" height="84" rx="20" fill="#13213A" stroke="#2D3B55"/>
+  <text x="632" y="252" fill="#F2F6FF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Context Check</text>
+  <text x="632" y="278" fill="#93A6C6" font-family="Arial, sans-serif" font-size="16">Coverage + relevance</text>
+
+  <rect x="876" y="214" width="220" height="84" rx="20" fill="#13213A" stroke="#2D3B55"/>
+  <text x="906" y="252" fill="#F2F6FF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Safety Validator</text>
+  <text x="906" y="278" fill="#93A6C6" font-family="Arial, sans-serif" font-size="16">High-risk answer checks</text>
+
+  <rect x="222" y="418" width="220" height="96" rx="24" fill="#0F1828" stroke="#31415D"/>
+  <text x="256" y="460" fill="#F2F6FF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Evidence Pack</text>
+  <text x="256" y="490" fill="#94A7C7" font-family="Arial, sans-serif" font-size="17">Structured source bundle for answer generation</text>
+
+  <rect x="492" y="418" width="220" height="96" rx="24" fill="#0F1828" stroke="#31415D"/>
+  <text x="526" y="460" fill="#F2F6FF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Response Agent</text>
+  <text x="526" y="490" fill="#94A7C7" font-family="Arial, sans-serif" font-size="17">Grounded answer with system constraints</text>
+
+  <rect x="762" y="418" width="220" height="96" rx="24" fill="#0F1828" stroke="#31415D"/>
+  <text x="796" y="460" fill="#F2F6FF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Audit Trail</text>
+  <text x="796" y="490" fill="#94A7C7" font-family="Arial, sans-serif" font-size="17">Why it answered this way</text>
+
+  <path d="M264 256H334" stroke="#57D4FF" stroke-width="4"/>
+  <path d="M530 256H602" stroke="#57D4FF" stroke-width="4"/>
+  <path d="M804 256H876" stroke="#57D4FF" stroke-width="4"/>
+  <path d="M434 298V360H332V418" stroke="#9EF5D1" stroke-width="4"/>
+  <path d="M702 298V360H602V418" stroke="#9EF5D1" stroke-width="4"/>
+  <path d="M986 298V360H872V418" stroke="#9EF5D1" stroke-width="4"/>
+  <path d="M442 466H492" stroke="#FFB86B" stroke-width="4"/>
+  <path d="M712 466H762" stroke="#FFB86B" stroke-width="4"/>
+
+  <circle cx="110" cy="108" r="10" fill="#57D4FF"/>
+  <circle cx="138" cy="108" r="10" fill="#9EF5D1"/>
+  <circle cx="166" cy="108" r="10" fill="#FFB86B"/>
+
+  <rect x="92" y="566" width="1008" height="62" rx="20" fill="#0A1220" stroke="#233149"/>
+  <text x="122" y="605" fill="#8EA2C3" font-family="Arial, sans-serif" font-size="22">Useful visual for a recruiter: clearer than raw LangChain code, and it signals system design thinking immediately.</text>
 </svg>

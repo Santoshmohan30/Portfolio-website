@@ -824,57 +824,6 @@
           </div>
         </section>
 
-        <section class="section" id="writing-workflow">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Publishing Workflow</p>
-            <h2>How I actually add a new post</h2>
-            <p>
-              This is now a single-source workflow. I write the post, add its metadata in one place, push to
-              GitHub, and both blog sections update automatically.
-            </p>
-          </div>
-          <div class="project-grid">
-            <article class="info-card reveal">
-              <h3>1. Create the post file</h3>
-              <p>
-                Duplicate <a href="posts/weekly-template.html">`posts/weekly-template.html`</a> inside the
-                `posts/` folder and rename it to something like `week-13-learning-log.html`.
-              </p>
-            </article>
-            <article class="info-card reveal">
-              <h3>2. Edit the post content</h3>
-              <p>
-                Open the new file and replace the title, date, sections, and text. That single file becomes the
-                full blog post page.
-              </p>
-            </article>
-            <article class="info-card reveal">
-              <h3>3. Update the blog data file</h3>
-              <p>
-                Add one new object in <a href="assets/js/blog-data.js">`assets/js/blog-data.js`</a> with the title,
-                date, tags, preview, and post file link.
-              </p>
-            </article>
-            <article class="info-card reveal">
-              <h3>4. Push to GitHub</h3>
-              <p>
-                Commit the new post file and the `blog-data.js` change. GitHub Pages rebuilds the site
-                automatically from `main`.
-              </p>
-            </article>
-          </div>
-          <div class="contact-card reveal">
-            <p class="architecture-title">Quick Publish Checklist</p>
-            <p>
-              New file in `posts/` → edit the content → add one object in `assets/js/blog-data.js` → push to
-              `main`.
-            </p>
-            <p>
-              No admin panel is needed. Also, nobody can post to this site unless they can change your GitHub repo.
-            </p>
-          </div>
-        </section>
-
         <section class="section" id="gallery">
           <div class="section-heading reveal">
             <p class="eyebrow">Life Outside Code</p>

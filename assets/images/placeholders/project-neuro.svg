@@ -1,0 +1,12 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#08101D"/>
+  <rect x="74" y="94" width="1052" height="532" rx="30" fill="#101A2E" stroke="#25334E"/>
+  <path d="M146 494C212 390 278 358 344 372C410 386 476 502 542 500C608 498 674 334 740 322C806 310 872 450 938 454C1004 458 1070 320 1136 244" stroke="#57D4FF" stroke-width="6"/>
+  <path d="M146 424C212 432 278 444 344 430C410 416 476 322 542 312C608 302 674 380 740 392C806 404 872 364 938 338C1004 312 1070 300 1136 316" stroke="#9EF5D1" stroke-width="6" stroke-dasharray="14 10"/>
+  <rect x="134" y="154" width="166" height="102" rx="18" fill="#0C1424"/>
+  <rect x="350" y="154" width="166" height="102" rx="18" fill="#0C1424"/>
+  <rect x="566" y="154" width="166" height="102" rx="18" fill="#0C1424"/>
+  <rect x="782" y="154" width="166" height="102" rx="18" fill="#0C1424"/>
+  <rect x="998" y="154" width="88" height="102" rx="18" fill="#0C1424"/>
+  <text x="120" y="672" fill="#9FB2D4" font-family="Arial, sans-serif" font-size="26">Replace with imaging frames, QC plots, or end-to-end pipeline view</text>
+</svg>

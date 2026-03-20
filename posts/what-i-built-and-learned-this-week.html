@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What I Built and Learned This Week | Santosh Mohan Jena</title>
+    <meta
+      name="description"
+      content="Weekly engineering log from Santosh Mohan Jena covering backend systems, scientific workflows, iteration, and lessons learned."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="../index.html">SMJ</a>
+        <nav class="nav">
+          <a href="../blog/index.html">Blog</a>
+          <a href="../index.html#projects">Projects</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="post-layout section">
+        <article class="post reveal">
+          <p class="eyebrow">Weekly Log</p>
+          <h1>What I Built and Learned This Week</h1>
+          <p class="post-meta">Week 12 • March 20, 2026</p>
+
+          <section>
+            <h2>What I worked on</h2>
+            <p>
+              This week I focused on tightening the connection between backend architecture and model-driven
+              workflow design. That included thinking through cleaner API boundaries for document processing work
+              and making the structure of an agentic retrieval system easier to reason about.
+            </p>
+          </section>
+
+          <section>
+            <h2>Problem faced</h2>
+            <p>
+              The recurring challenge was not feature count. It was keeping systems understandable as they gained
+              more moving parts. Once retrieval, validation, storage, and orchestration begin to interact, weak
+              boundaries start creating debugging cost very quickly.
+            </p>
+          </section>
+
+          <section>
+            <h2>What I tried</h2>
+            <p>
+              I first explored simpler all-in-one flow designs because they were fast to prototype. That helped
+              me test direction, but it also made me notice how quickly logic becomes entangled when too much sits
+              in one layer.
+            </p>
+          </section>
+
+          <section>
+            <h2>What failed</h2>
+            <p>
+              Some initial structure assumed that downstream validation could be added later without changing the
+              rest of the pipeline. In practice, that assumption was weak. Once a system needs trust and
+              traceability, validation has to shape the architecture from the beginning.
+            </p>
+          </section>
+
+          <section>
+            <h2>What worked</h2>
+            <p>
+              Breaking responsibilities into clearer stages improved both implementation clarity and future
+              maintainability. The strongest progress came from defining interfaces and expected outputs before
+              optimizing details.
+            </p>
+          </section>
+
+          <section>
+            <h2>Key takeaways</h2>
+            <p>
+              The best weekly progress often comes from reducing ambiguity, not adding more code. When a pipeline
+              becomes easier to inspect, the next round of improvement becomes much more focused.
+            </p>
+          </section>
+
+          <section>
+            <h2>Why it matters for industry / engineering / ML / science</h2>
+            <p>
+              Teams need engineers who can keep complexity legible while a system grows. That is true for ML
+              products, backend services, and research pipelines alike, and it is one of the habits I’m
+              intentionally strengthening every week.
+            </p>
+          </section>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <p>Weekly logs are designed to show iteration, not perfection.</p>
+      </footer>
+    </div>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#08101D"/>
+  <rect x="54" y="54" width="1092" height="612" rx="28" fill="#101A2E" stroke="#24324D"/>
+  <rect x="92" y="98" width="250" height="520" rx="20" fill="#0C1424"/>
+  <rect x="380" y="98" width="718" height="96" rx="18" fill="#13203B"/>
+  <rect x="380" y="222" width="336" height="174" rx="18" fill="#0D172A"/>
+  <rect x="744" y="222" width="354" height="174" rx="18" fill="#0D172A"/>
+  <rect x="380" y="424" width="718" height="194" rx="18" fill="#0D172A"/>
+  <circle cx="130" cy="134" r="10" fill="#57D4FF"/>
+  <rect x="154" y="124" width="116" height="20" rx="10" fill="#57D4FF" fill-opacity="0.28"/>
+  <rect x="118" y="194" width="198" height="16" rx="8" fill="#9FB2D4" fill-opacity="0.2"/>
+  <rect x="118" y="230" width="162" height="16" rx="8" fill="#9FB2D4" fill-opacity="0.2"/>
+  <rect x="118" y="266" width="186" height="16" rx="8" fill="#9FB2D4" fill-opacity="0.2"/>
+  <rect x="418" y="130" width="252" height="20" rx="10" fill="#9EF5D1" fill-opacity="0.4"/>
+  <rect x="418" y="258" width="172" height="18" rx="9" fill="#57D4FF" fill-opacity="0.35"/>
+  <rect x="782" y="258" width="182" height="18" rx="9" fill="#FFB86B" fill-opacity="0.35"/>
+  <rect x="418" y="458" width="220" height="18" rx="9" fill="#9EF5D1" fill-opacity="0.35"/>
+  <rect x="418" y="494" width="426" height="14" rx="7" fill="#9FB2D4" fill-opacity="0.18"/>
+  <rect x="418" y="526" width="364" height="14" rx="7" fill="#9FB2D4" fill-opacity="0.18"/>
+  <text x="92" y="682" fill="#9FB2D4" font-family="Arial, sans-serif" font-size="26">Replace with app screenshot or ER diagram</text>
+</svg>

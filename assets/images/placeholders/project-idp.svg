@@ -1,0 +1,17 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#08101D"/>
+  <rect x="78" y="154" width="180" height="390" rx="24" fill="#101A2E" stroke="#25334E"/>
+  <rect x="332" y="154" width="180" height="390" rx="24" fill="#101A2E" stroke="#25334E"/>
+  <rect x="586" y="154" width="180" height="390" rx="24" fill="#101A2E" stroke="#25334E"/>
+  <rect x="840" y="154" width="280" height="390" rx="24" fill="#101A2E" stroke="#25334E"/>
+  <path d="M258 350H332" stroke="#57D4FF" stroke-width="4"/>
+  <path d="M512 350H586" stroke="#57D4FF" stroke-width="4"/>
+  <path d="M766 350H840" stroke="#57D4FF" stroke-width="4"/>
+  <rect x="116" y="214" width="104" height="132" rx="16" fill="#0B1424"/>
+  <rect x="370" y="214" width="104" height="132" rx="16" fill="#0B1424"/>
+  <rect x="624" y="214" width="104" height="132" rx="16" fill="#0B1424"/>
+  <rect x="878" y="214" width="204" height="64" rx="16" fill="#0B1424"/>
+  <rect x="878" y="308" width="204" height="64" rx="16" fill="#0B1424"/>
+  <rect x="878" y="402" width="204" height="64" rx="16" fill="#0B1424"/>
+  <text x="122" y="612" fill="#9FB2D4" font-family="Arial, sans-serif" font-size="26">Replace with OCR pipeline, API flow, or deployment diagram</text>
+</svg>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What Building a Flask Backend Taught Me About System Design | Santosh Mohan Jena</title>
+    <meta
+      name="description"
+      content="Reflections on backend architecture, schema design, maintainability, and lessons from building with Flask."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="../index.html">SMJ</a>
+        <nav class="nav">
+          <a href="../blog/index.html">Blog</a>
+          <a href="../index.html#projects">Projects</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="post-layout section">
+        <article class="post reveal">
+          <p class="eyebrow">Backend Engineering</p>
+          <h1>What Building a Flask Backend Taught Me About System Design</h1>
+          <p class="post-meta">March 08, 2026 • Flask • Backend Architecture</p>
+
+          <section>
+            <h2>What I worked on</h2>
+            <p>
+              I reflected on the architectural lessons behind a Flask-based application where schema design,
+              entity relationships, route organization, and future extensibility all influenced the backend shape.
+            </p>
+          </section>
+
+          <section>
+            <h2>Problem faced</h2>
+            <p>
+              The biggest challenge was that the product needed to feel simple for users while representing
+              connected operational data behind the scenes. That creates pressure on both the database model and
+              the service layer.
+            </p>
+          </section>
+
+          <section>
+            <h2>What I tried</h2>
+            <p>
+              Like many early builds, I initially leaned toward direct implementation: add the feature, wire the
+              route, move on. That accelerated early progress but also exposed places where the data model was not
+              as future-ready as it needed to be.
+            </p>
+          </section>
+
+          <section>
+            <h2>What failed</h2>
+            <p>
+              The weak point was assuming that application complexity would stay proportional to the interface. In
+              practice, connected workflows introduce architectural pressure even when the UI remains compact.
+            </p>
+          </section>
+
+          <section>
+            <h2>What worked</h2>
+            <p>
+              Once the schema and responsibilities became more explicit, the whole application became easier to
+              reason about. The codebase benefited from clearer relationships, better separation of concerns, and a
+              more realistic view of future migration needs.
+            </p>
+          </section>
+
+          <section>
+            <h2>Key takeaways</h2>
+            <p>
+              Good backend systems are rarely defined by how fast the first version shipped. They are defined by
+              whether the next layer of complexity has somewhere sensible to go.
+            </p>
+          </section>
+
+          <section>
+            <h2>Why it matters for industry / engineering / ML / science</h2>
+            <p>
+              This lesson generalizes well beyond Flask. Whether the stack is a web app, ML platform, or
+              scientific workflow, explicit structure is what keeps new complexity from becoming expensive chaos.
+            </p>
+          </section>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <p>System design becomes visible when the first simple version stops being enough.</p>
+      </footer>
+    </div>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

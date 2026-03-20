@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From Naive RAG to Modular RAG | Santosh Mohan Jena</title>
+    <meta
+      name="description"
+      content="A technical reflection on moving from a naive RAG pipeline to a modular agentic workflow with stronger validation and reliability."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="../index.html">SMJ</a>
+        <nav class="nav">
+          <a href="../blog/index.html">Blog</a>
+          <a href="../index.html#projects">Projects</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="post-layout section">
+        <article class="post reveal">
+          <p class="eyebrow">AI Systems</p>
+          <h1>From Naive RAG to Modular RAG</h1>
+          <p class="post-meta">March 15, 2026 • Retrieval Systems • Architecture</p>
+
+          <section>
+            <h2>What I worked on</h2>
+            <p>
+              I analyzed the structure of a retrieval-augmented workflow and focused on the transition from a
+              simple fetch-and-answer pattern to a more modular system with explicit stages.
+            </p>
+          </section>
+
+          <section>
+            <h2>Problem faced</h2>
+            <p>
+              Naive RAG pipelines can seem effective when the query distribution is narrow, but they become hard to
+              trust when retrieval confidence is mixed, sources conflict, or answer safety matters.
+            </p>
+          </section>
+
+          <section>
+            <h2>What I tried</h2>
+            <p>
+              I started with a straightforward setup because it minimized development time. That was useful for
+              understanding the baseline, but it did not expose enough control over what the system should do when
+              retrieval quality was weak.
+            </p>
+          </section>
+
+          <section>
+            <h2>What failed</h2>
+            <p>
+              The simple structure made it too easy for weak retrieval results to pass directly into answer
+              generation. The resulting outputs were sometimes fluent but not sufficiently grounded, which is a bad
+              failure mode for any serious application.
+            </p>
+          </section>
+
+          <section>
+            <h2>What worked</h2>
+            <p>
+              The more durable direction was to split retrieval, validation, and response generation into explicit
+              stages. Once those steps had boundaries, it became easier to inspect, evaluate, and improve the
+              pipeline without rewriting everything.
+            </p>
+          </section>
+
+          <section>
+            <h2>Key takeaways</h2>
+            <p>
+              Better AI systems often come from better orchestration. A model can only be as useful as the system
+              around it is trustworthy.
+            </p>
+          </section>
+
+          <section>
+            <h2>Why it matters for industry / engineering / ML / science</h2>
+            <p>
+              This shift reflects a production mindset: we should optimize not just for impressive outputs, but for
+              controllability, transparency, and graceful failure when the system is uncertain.
+            </p>
+          </section>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <p>Strong RAG design is as much about system structure as it is about model quality.</p>
+      </footer>
+    </div>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

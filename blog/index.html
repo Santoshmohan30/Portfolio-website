@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Santosh Mohan Jena</title>
+    <meta
+      name="description"
+      content="Technical writing from Santosh Mohan Jena on AI systems, backend engineering, computational neuroscience, and weekly engineering logs."
+    />
+    <meta name="theme-color" content="#090f1d" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="../index.html">SMJ</a>
+        <nav class="nav">
+          <a href="../index.html#projects">Projects</a>
+          <a href="../index.html#case-studies">Case Studies</a>
+          <a href="../index.html#mindset">Mindset</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Blog</p>
+          <h1>Writing about systems, tradeoffs, and iteration</h1>
+          <p>
+            Use this page to publish weekly logs, deep technical reflections, and case-study style essays that
+            make your thinking visible to recruiters and collaborators.
+          </p>
+        </div>
+
+        <section class="filter-panel reveal">
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="weekly-log">Weekly Logs</button>
+          <button class="filter-button" data-filter="backend">Backend</button>
+          <button class="filter-button" data-filter="rag">RAG</button>
+          <button class="filter-button" data-filter="system-design">System Design</button>
+        </section>
+
+        <section class="blog-grid blog-grid-large">
+          <article class="blog-card reveal" data-tags="weekly-log learning reflection">
+            <p class="blog-date">March 20, 2026</p>
+            <h2>What I Built and Learned This Week</h2>
+            <div class="tag-row">
+              <span>Weekly Log</span>
+              <span>Learning</span>
+              <span>Reflection</span>
+            </div>
+            <p>
+              A weekly engineering log covering implementation progress, problems encountered, failed attempts,
+              and the parts that actually moved the work forward.
+            </p>
+            <a href="../posts/what-i-built-and-learned-this-week.html">Read post</a>
+          </article>
+
+          <article class="blog-card reveal" data-tags="rag llm architecture">
+            <p class="blog-date">March 15, 2026</p>
+            <h2>From Naive RAG to Modular RAG</h2>
+            <div class="tag-row">
+              <span>RAG</span>
+              <span>LLM Systems</span>
+              <span>Architecture</span>
+            </div>
+            <p>
+              A breakdown of why a simple retrieval pipeline was not enough and how modular orchestration
+              improved reliability, traceability, and safety thinking.
+            </p>
+            <a href="../posts/from-naive-rag-to-modular-rag.html">Read post</a>
+          </article>
+
+          <article class="blog-card reveal" data-tags="backend flask system-design">
+            <p class="blog-date">March 08, 2026</p>
+            <h2>What Building a Flask Backend Taught Me About System Design</h2>
+            <div class="tag-row">
+              <span>Backend</span>
+              <span>Flask</span>
+              <span>System Design</span>
+            </div>
+            <p>
+              Notes on schemas, route organization, maintainability, and why backend quality is often shaped by
+              the next migration rather than the current feature.
+            </p>
+            <a href="../posts/what-building-a-flask-backend-taught-me-about-system-design.html">Read post</a>
+          </article>
+        </section>
+
+        <section class="section-footer reveal">
+          <a class="button secondary" href="../posts/weekly-template.html">Open weekly post template</a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Use the template system in `/posts` to add new writing quickly.</p>
+        <p><span id="year"></span> Santosh Mohan Jena</p>
+      </footer>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

@@ -3,9 +3,9 @@ const blogPosts = [
     title: "What I Built and Learned This Week",
     date: "March 20, 2026",
     tags: ["weekly-log", "learning", "reflection"],
-    displayTags: ["Weekly Log", "Engineering", "Iteration"],
+    displayTags: ["Work Update", "Engineering", "Iteration"],
     preview:
-      "A weekly snapshot of building momentum across backend systems, research workflows, and technical communication.",
+      "A work update on building momentum across backend systems, research workflows, and technical communication.",
     href: "posts/what-i-built-and-learned-this-week.html",
   },
   {

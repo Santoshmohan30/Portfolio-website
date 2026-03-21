@@ -42,7 +42,7 @@ portfolio-website/
 - Tracks, about, skills, featured projects, case studies, engineering mindset, experience, gallery, and contact sections
 - Separate blog page with tag filtering
 - Public web resume page so the live site works without committing a PDF
-- Reusable weekly post template so new posts can be created by duplicating one HTML file
+- Reusable work update template so new posts can be created by duplicating one HTML file
 - Static HTML/CSS/JS only, so it works directly with GitHub Pages
 - Placeholder visuals and comments showing where to replace links, images, and text
 

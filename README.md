@@ -1,4 +1,4 @@
-# Sonny Jena Portfolio
+# Santosh Jena Portfolio
 
 Professional GitHub Pages portfolio designed to position Sonny Jena across AI/ML engineering, backend/software engineering, computational neuroscience, and technical writing.
 

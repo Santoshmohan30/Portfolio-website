@@ -1,8 +1,30 @@
 # Santosh Jena Portfolio
 
-Professional GitHub Pages portfolio designed to position Sonny Jena across AI/ML engineering, backend/software engineering, computational neuroscience, and technical writing.
+This repository contains my portfolio website.
 
-## Recommended folder structure
+I built it to present myself clearly across:
+- AI/ML engineering
+- backend and software engineering
+- computational pipelines
+- technical writing through project notes and work updates
+
+The goal of this site is simple: when a recruiter or engineer opens it, I want them to understand what I build, how I think, and the kinds of hard technical problems I like working on.
+
+## What’s on the site
+
+- A homepage with my background, skills, featured projects, case studies, engineering mindset, experience, and contact information
+- A blog page with work updates and technical writing
+- A public web resume page
+- Project visuals and a gallery section for personality without taking focus away from the technical work
+
+## Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
+
+## Main Files
 
 ```text
 portfolio-website/
@@ -10,56 +32,52 @@ portfolio-website/
 ├── README.md
 ├── .nojekyll
 ├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   ├── images/
-│   │   └── placeholders/
-│   │       ├── project-mousebase.svg
-│   │       ├── project-healthbot.svg
-│   │       ├── project-idp.svg
-│   │       ├── project-neuro.svg
-│   │       ├── gallery-lab.svg
-│   │       ├── gallery-whiteboard.svg
-│   │       ├── gallery-setup.svg
-│   │       ├── gallery-research.svg
-│   │       ├── gallery-reading.svg
-│   │       └── gallery-travel.svg
-│   └── js/
-│       └── script.js
-├── blog/
-│   └── index.html
+│   ├── css/styles.css
+│   ├── js/script.js
+│   ├── js/blog-data.js
+│   └── images/placeholders/
+├── blog/index.html
 ├── resume.html
 └── posts/
-    ├── weekly-template.html
-    ├── what-i-built-and-learned-this-week.html
-    ├── from-naive-rag-to-modular-rag.html
-    └── what-building-a-flask-backend-taught-me-about-system-design.html
 ```
 
-## What is included
+## What I Highlight Here
 
-- Premium dark landing page with recruiter-focused narrative and strong hierarchy
-- Tracks, about, skills, featured projects, case studies, engineering mindset, experience, gallery, and contact sections
-- Separate blog page with tag filtering
-- Public web resume page so the live site works without committing a PDF
-- Reusable work update template so new posts can be created by duplicating one HTML file
-- Static HTML/CSS/JS only, so it works directly with GitHub Pages
-- Placeholder visuals and comments showing where to replace links, images, and text
+### AI / ML Systems
+I’m interested in building systems that combine models, retrieval, validation, and backend delivery in a way that is actually usable and reliable.
 
-## Run locally in VS Code
+### Backend Engineering
+I like designing applications and pipelines where structure matters: schemas, APIs, maintainability, debugging, and long-term scalability.
 
-Because this is a static site, you can preview it with any simple local server.
+### Computational Pipelines
+I work on scientific and data-heavy workflows where correctness, reproducibility, and quality control matter as much as raw output.
 
-### Option 1: VS Code Live Server
+### Technical Thinking
+I use project writeups and work updates to show how I reason through messy systems, tradeoffs, and failure points.
 
-1. Open the folder in VS Code.
-2. Install the `Live Server` extension if needed.
-3. Right-click `index.html`.
-4. Choose `Open with Live Server`.
+## Featured Projects
 
-### Option 2: Python built-in server
+- **MouseBase / Mice Manager**
+  Flask-based lab workflow platform for tracking breeding, procedures, scheduling, and colony records.
 
-From the repository root, run:
+- **HealthBot**
+  Agentic RAG backend for medical knowledge retrieval with structured validation and response flow.
+
+- **Intelligent Document Processor**
+  OCR and document-processing backend that converts PDFs and images into structured JSON.
+
+- **Computational Pipeline**
+  Research-oriented pipeline for imaging, signal extraction, normalization, synchronization, and quality control.
+
+## Running It Locally
+
+I keep the site static so it stays easy to maintain and deploy.
+
+### VS Code
+Open the project folder and use Live Server.
+
+### Python
+From the repository root:
 
 ```bash
 python3 -m http.server 8000
@@ -67,84 +85,35 @@ python3 -m http.server 8000
 
 Then open [http://localhost:8000](http://localhost:8000).
 
-## Deploy to GitHub Pages
-
-### Simple GitHub Pages setup
-
-1. Push this folder to your GitHub repository.
-2. In GitHub, open `Settings` for the repository.
-3. Go to `Pages`.
-4. Under `Build and deployment`, choose `Deploy from a branch`.
-5. Select the branch you want to publish, usually `main`.
-6. Select `/ (root)` as the folder.
-7. Save and wait for GitHub Pages to publish.
-
-### Notes
-
-- The site is already structured for root deployment.
-- `.nojekyll` is included so GitHub Pages serves the site without Jekyll processing.
-- If you later publish from a project subpath, keep links relative the same way they are now.
-
-## Customize first
-
-Start with the high-signal items that recruiters will notice immediately:
-
-1. Replace the placeholder email and LinkedIn URLs in `index.html`.
-2. Swap the placeholder project/demo links with real repository or demo URLs.
-3. Replace the SVG project and gallery placeholders with screenshots, architecture diagrams, and professional photos.
-4. Review the case study language so it matches your exact project history and achievements.
-5. Add more blog posts by duplicating `posts/weekly-template.html`.
-6. Update `resume.html` if you want the public web resume to show more detail.
-
-## Easy maintenance workflow
-
-- Edit homepage content in `index.html`.
-- Add or update styles in `assets/css/styles.css`.
-- Update interactions or blog filters in `assets/js/script.js`.
-- Add new blog posts in `posts/`.
-- Add new blog cards on both `index.html` and `blog/index.html`.
-- Replace placeholder visuals inside `assets/images/placeholders/` or point the HTML to real images.
-- If you later want a downloadable PDF, host it separately and link it from `resume.html`.
-
-## Ideal README structure for the repository
-
-If you want a recruiter-friendly repo README, this is a good structure:
-
-```text
-# Portfolio Website
-
-## Overview
-Short explanation of what the site is for and how it positions you.
-
-## Highlights
-- AI/ML systems portfolio
-- Backend engineering work
-- Computational neuroscience pipeline work
-- Technical blog and case studies
-
-## Tech Stack
-- HTML
-- CSS
-- JavaScript
-- GitHub Pages
-
-## Local Development
-How to run locally.
-
 ## Deployment
-How GitHub Pages is configured.
 
-## Customization Guide
-What files to edit for text, links, images, resume, and blog posts.
+This site is deployed with GitHub Pages from the `main` branch.
 
-## Folder Structure
-Tree view of the repository.
+Because it is a static site, updates are straightforward:
+
+```bash
+git add .
+git commit -m "Update portfolio"
+git push
 ```
 
-## Suggested next improvements
+## Updating Content
 
-- Add a custom domain and favicon
-- Add real project screenshots and architecture diagrams
-- Add analytics such as Plausible or Google Analytics if desired
-- Add a hosted PDF resume later if you want a downloadable file on top of the web resume
-- Add a `404.html` later for a polished GitHub Pages experience
+- Edit [index.html](/Users/sonny03/Documents/portfolio-website/index.html) for homepage content
+- Edit [blog/index.html](/Users/sonny03/Documents/portfolio-website/blog/index.html) for the blog archive page
+- Edit [resume.html](/Users/sonny03/Documents/portfolio-website/resume.html) for the public web resume
+- Edit [assets/css/styles.css](/Users/sonny03/Documents/portfolio-website/assets/css/styles.css) for styling
+- Edit [assets/js/blog-data.js](/Users/sonny03/Documents/portfolio-website/assets/js/blog-data.js) to add or update blog cards
+- Add blog posts in [posts](/Users/sonny03/Documents/portfolio-website/posts)
+
+## What I Still Plan To Improve
+
+- Add more project screenshots and architecture diagrams
+- Add more work updates and technical writing
+- Keep refining the case studies so they stay close to the real engineering story behind each project
+
+## Contact
+
+- Email: [sjena@buffalo.edu](mailto:sjena@buffalo.edu)
+- GitHub: [Santoshmohan30](https://github.com/Santoshmohan30)
+- LinkedIn: [Santosh Mohan](https://www.linkedin.com/in/santosh-mohan-a65112299/)

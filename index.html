@@ -270,6 +270,65 @@
             </p>
           </div>
           <div class="project-grid">
+            <article class="project-card reveal" id="mousebase">
+              <div class="project-header">
+                <div>
+                  <p class="project-kicker">Backend Architecture</p>
+                  <h3>MouseBase</h3>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Santoshmohan30/Mice-Manager" target="_blank" rel="noreferrer">GitHub</a>
+                  <a href="#case-studies">Deep Dive</a>
+                </div>
+              </div>
+              <p class="project-summary">
+                Flask-based lab animal workflow management platform for breeding records, procedure logging,
+                calendar scheduling, and pup tracking.
+              </p>
+              <p>
+                The core engineering challenge was designing a schema and backend structure that stayed readable
+                while representing a dense set of relationships across cages, animals, litters, procedures,
+                schedules, and lifecycle events.
+              </p>
+              <ul class="stack-list">
+                <li>Flask</li>
+                <li>SQLAlchemy</li>
+                <li>Jinja2</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>SQLite</li>
+                <li>Docker</li>
+              </ul>
+              <div class="architecture-block">
+                <p class="architecture-title">Architecture Snapshot</p>
+                <div class="architecture-grid">
+                  <div class="architecture-item">
+                    <strong>Core shape</strong>
+                    <p>Flask app with ORM-backed models, modular routes, and role-based lab workflows.</p>
+                  </div>
+                  <div class="architecture-item">
+                    <strong>Key entities</strong>
+                    <p>Mice, cages, breeding pairs, litters, procedures, schedules, users, and audit flows.</p>
+                  </div>
+                  <div class="architecture-item">
+                    <strong>Hard problem</strong>
+                    <p>Keeping relational complexity manageable while the number of connected workflows grows.</p>
+                  </div>
+                  <div class="architecture-item">
+                    <strong>Next upgrade</strong>
+                    <p>Move from SQLite-first development toward PostgreSQL and stronger migration discipline.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-visual">
+                <img src="assets/images/placeholders/project-mousebase.svg" alt="MouseBase placeholder visual" />
+              </div>
+              <div class="project-meta">
+                <span>Backend-first project</span>
+                <span>Live repo linked</span>
+              </div>
+            </article>
+
             <article class="project-card reveal" id="healthbot">
               <div class="project-header">
                 <div>

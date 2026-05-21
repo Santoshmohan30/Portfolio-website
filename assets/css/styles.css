@@ -122,7 +122,7 @@ strong {
 .hero h1,
 .section-heading h1 {
   margin: 0.2rem 0 0.8rem;
-  font-size: clamp(2.9rem, 6vw, 5.2rem);
+  font-size: clamp(2.5rem, 5vw, 4.4rem);
   line-height: 0.95;
   letter-spacing: -0.05em;
 }

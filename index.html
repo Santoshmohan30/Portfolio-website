@@ -42,6 +42,9 @@
     .interests li { margin:6px 0; }
     .pub { margin-bottom:12px; }
     footer { padding:32px 0 48px; color:var(--muted); font-size:.9rem; }
+    .hero { position:relative; overflow:hidden; }
+    #neuro-bg { position:absolute; inset:0; width:100%; height:100%; z-index:0; pointer-events:none; }
+    .hero .wrap { position:relative; z-index:1; }
   </style>
 </head>
 <body>
@@ -62,6 +65,7 @@
 
   <main id="top">
     <div class="hero">
+      <canvas id="neuro-bg" aria-hidden="true"></canvas>
       <div class="wrap">
         <p class="eyebrow">Experimental &amp; Computational Neuroscience · AI/ML Modeling</p>
         <h1>Santosh Mohan Jena</h1>
@@ -257,5 +261,39 @@
 
   <footer><div class="wrap">© <span id="yr">2026</span> Santosh Mohan Jena</div></footer>
   <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+  <script>
+  (function(){
+    const c=document.getElementById('neuro-bg'); if(!c) return;
+    const ctx=c.getContext('2d'); const hero=c.parentElement;
+    const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let W,H,dpr,nodes=[],edges=[],pulses=[];
+    function build(){
+      dpr=window.devicePixelRatio||1; W=hero.clientWidth; H=hero.clientHeight;
+      c.width=W*dpr; c.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+      const n=Math.max(28,Math.min(70,Math.round(W*H/16000)));
+      nodes=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.15,vy:(Math.random()-.5)*.15,glow:0,refr:0}));
+      edges=[]; const maxD=Math.min(170,W/5);
+      for(let i=0;i<n;i++)for(let j=i+1;j<n;j++){const dx=nodes[i].x-nodes[j].x,dy=nodes[i].y-nodes[j].y;if(dx*dx+dy*dy<maxD*maxD)edges.push([i,j]);}
+    }
+    function fire(i){const a=nodes[i]; if(a.refr>0) return; a.glow=1; a.refr=90;
+      for(const [p,q] of edges){ if(p===i||q===i){ const t=p===i?q:p; if(Math.random()<.45) pulses.push({from:i,to:t,t:0,speed:.012+Math.random()*.012}); } } }
+    function step(){
+      ctx.clearRect(0,0,W,H);
+      for(const a of nodes){ if(!reduce){a.x+=a.vx;a.y+=a.vy; if(a.x<0||a.x>W)a.vx*=-1; if(a.y<0||a.y>H)a.vy*=-1;} a.glow*=.94; if(a.refr>0)a.refr--; }
+      ctx.lineWidth=1;
+      for(const [i,j] of edges){const a=nodes[i],b=nodes[j]; ctx.strokeStyle='rgba(31,78,140,'+(0.07+0.25*Math.max(a.glow,b.glow))+')'; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();}
+      for(let k=pulses.length-1;k>=0;k--){const P=pulses[k]; P.t+=P.speed; const a=nodes[P.from],b=nodes[P.to];
+        if(P.t>=1){ pulses.splice(k,1); if(Math.random()<.6) fire(P.to); continue; }
+        const x=a.x+(b.x-a.x)*P.t,y=a.y+(b.y-a.y)*P.t; ctx.fillStyle='rgba(46,160,120,.85)'; ctx.beginPath(); ctx.arc(x,y,2.2,0,Math.PI*2); ctx.fill(); }
+      for(const a of nodes){ const r=2.6+a.glow*4;
+        if(a.glow>.05){ const g=ctx.createRadialGradient(a.x,a.y,0,a.x,a.y,r*5); g.addColorStop(0,'rgba(46,160,120,'+(.45*a.glow)+')'); g.addColorStop(1,'rgba(46,160,120,0)'); ctx.fillStyle=g; ctx.beginPath(); ctx.arc(a.x,a.y,r*5,0,Math.PI*2); ctx.fill(); }
+        ctx.fillStyle='rgba(31,78,140,'+(.35+.6*a.glow)+')'; ctx.beginPath(); ctx.arc(a.x,a.y,r,0,Math.PI*2); ctx.fill(); }
+      if(pulses.length<40 && Math.random()<.06) fire(Math.floor(Math.random()*nodes.length));
+      if(pulses.length>160) pulses.splice(0,pulses.length-160);
+      requestAnimationFrame(step);
+    }
+    build(); window.addEventListener('resize',build); fire(0); step();
+  })();
+  </script>
 </body>
 </html>
